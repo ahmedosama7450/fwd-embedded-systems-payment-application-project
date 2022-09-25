@@ -108,7 +108,7 @@ EN_transState_t recieveTransactionData(ST_transaction_t* transData) {
 	}
 
 	fprintf_s(file, "Transaction number %d at %s with state code: %d\nCard holder name: %s, Amount: %.2f\n\n",
-		nextSequenceNumber,
+		transData->transactionSequenceNumber,
 		transData->terminalData.transactionDate,
 		(int)transData->transState,
 		transData->cardHolderData.cardHolderName,

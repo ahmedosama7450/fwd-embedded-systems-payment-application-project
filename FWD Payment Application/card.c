@@ -3,7 +3,6 @@
 #include <ctype.h>
 
 #include "card.h" 
-#include "utils.h"
 
 int isPosDigit(int c) {
 	return isdigit(c) && c >= 0;
@@ -16,7 +15,7 @@ EN_cardError_t getCardHolderName(ST_cardData_t* cardData) {
 	name[strlen(name) - 1] = '\0';
 
 	size_t len = strlen(name);
-	if (name == NULL || len < 5 || len > 10) { // TODO
+	if (name == NULL || len < 20 || len > 24) {
 		return WRONG_NAME;
 	}
 	
@@ -34,8 +33,7 @@ EN_cardError_t getCardExpiryDate(ST_cardData_t* cardData) {
 	if (date == NULL || len != 5 || date[2] != '/'
 		|| !isPosDigit(date[0]) || !isPosDigit(date[1]) 
 		|| !isPosDigit(date[3]) || !isPosDigit(date[4])
-		|| (date[0] != '0' && date[0] != '1')
-		|| date[1] == '0') {
+		|| (date[0] != '0' && date[0] != '1')) {
 		return WRONG_EXP_DATE;
 	}
 
@@ -50,7 +48,7 @@ EN_cardError_t getCardPAN(ST_cardData_t* cardData){
 	pan[strlen(pan) - 1] = '\0';
 
 	size_t len = strlen(pan);
-	if (pan == NULL || len < 5 || len > 19) { // TODO
+	if (pan == NULL || len < 16 || len > 19) { 
 		return WRONG_PAN;
 	}
 
