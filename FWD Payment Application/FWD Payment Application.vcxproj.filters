@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\card">
+      <UniqueIdentifier>{7a327761-1e0b-4338-8d03-b4c1d40f6c28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\terminal">
+      <UniqueIdentifier>{5124da46-da75-441b-b67b-d3ef433695a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\server">
+      <UniqueIdentifier>{08907e7b-9d80-45a1-a683-06822f9a2657}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\application">
+      <UniqueIdentifier>{e6d468b5-3831-410f-bc68-bcad7dc25d5a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="card.c">
+      <Filter>Source Files\card</Filter>
+    </ClCompile>
+    <ClCompile Include="terminal.c">
+      <Filter>Source Files\terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="server.c">
+      <Filter>Source Files\server</Filter>
+    </ClCompile>
+    <ClCompile Include="app.c">
+      <Filter>Source Files\application</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="card.h">
+      <Filter>Source Files\card</Filter>
+    </ClInclude>
+    <ClInclude Include="terminal.h">
+      <Filter>Source Files\terminal</Filter>
+    </ClInclude>
+    <ClInclude Include="server.h">
+      <Filter>Source Files\server</Filter>
+    </ClInclude>
+    <ClInclude Include="app.h">
+      <Filter>Source Files\application</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="accounts.dat">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="transactions.dat">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
